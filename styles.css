@@ -1,7 +1,7 @@
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #f3f4f6;
-  background-image: url("images/pexels-hngstrm-1939485.jpg");
+  background-image:url('images/pexels-hngstrm-1939485.jpg');
   margin: 0;
   padding: 0;
 }
@@ -28,15 +28,35 @@ header h1 {
 .form-group {
   margin-bottom: 20px;
   text-align: left;
+  width: 40%;
 }
-
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.builder-form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  width: 220%;
+}
 .form-group label {
+  
+  margin-top: 5px;
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
   color: #333;
 }
-
+.builder-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
 .form-group input,
 .form-group textarea {
   width: 100%;
@@ -111,4 +131,30 @@ button:active {
   color: #007bff;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+.previous_works {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.previous_works button {
+  padding: 12px 24px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.previous_works button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.previous_works button:active {
+  background-color: #00408a;
+  transform: scale(1);
 }
